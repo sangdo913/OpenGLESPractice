@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/textA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="158dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="54dp"
+        android:digits="0123456789"
+        android:hint="숫자만"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/Key"
+        app:layout_constraintEnd_toStartOf="@+id/textB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Key"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="38dp"
+        android:digits="0123456789"
+        android:hint="0~9999"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/setEnter"
+        app:layout_constraintEnd_toStartOf="@+id/strArea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textA" />
+
+    <EditText
+        android:id="@+id/strArea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="16dp"
+        android:hint="string"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/getEnter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Key"
+        app:layout_constraintTop_toBottomOf="@+id/sumButton" />
+
+    <EditText
+        android:id="@+id/textB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="54dp"
+        android:digits="0123456789"
+        android:hint="숫자만"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/sumButton"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textA"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="46dp"
+        android:text="Number will display"
+        app:layout_constraintBottom_toBottomOf="@+id/textB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textB"
+        app:layout_constraintTop_toTopOf="@+id/textB" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="29dp"
+        android:text="result display"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setEnter" />
+
+    <Button
+        android:id="@+id/sumButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="77dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="119dp"
+        android:text="sum"
+        app:layout_constraintBottom_toTopOf="@+id/strArea"
+        app:layout_constraintEnd_toStartOf="@+id/mButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textB" />
+
+    <Button
+        android:id="@+id/getEnter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="42dp"
+        android:text="get"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/setEnter"
+        app:layout_constraintTop_toBottomOf="@+id/strArea" />
+
+    <Button
+        android:id="@+id/setEnter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="102dp"
+        android:text="set"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toStartOf="@+id/getEnter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Key" />
+
+    <Button
+        android:id="@+id/mButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="41dp"
+        android:text="mul"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sumButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sumButton" />
+
+</android.support.constraint.ConstraintLayout>
