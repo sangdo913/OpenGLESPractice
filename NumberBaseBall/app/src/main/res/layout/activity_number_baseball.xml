@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumberBaseball"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="102dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/enterButton"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="Enter" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="379dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="289dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="105dp">
+
+            <LinearLayout
+                android:layout_width="145dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/log"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="my Log"
+                    tools:layout_editor_absoluteX="88dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/mView"
+                    android:layout_width="206dp"
+                    android:layout_height="298dp"
+                    android:text="Log here"
+                    tools:layout_editor_absoluteX="24dp"
+                    tools:layout_editor_absoluteY="159dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/yLogView"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="your Log" />
+
+                <TextView
+                    android:id="@+id/yView"
+                    android:layout_width="151dp"
+                    android:layout_height="296dp"
+                    android:text="Log here" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="248dp">
+
+            <LinearLayout
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="187dp">
+
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="83dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:text="Size" />
+
+                <TextView
+                    android:id="@+id/sizeView"
+                    android:layout_width="151dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="225dp">
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    android:text="Type"
+                    tools:layout_editor_absoluteX="108dp"
+                    tools:layout_editor_absoluteY="441dp" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="199dp"
+                    android:layout_height="69dp"
+                    android:layout_weight="1"
+                    android:inputType="text|number" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
